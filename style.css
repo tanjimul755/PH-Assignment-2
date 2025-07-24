@@ -17,6 +17,23 @@ body {
     background-color: rgba(245, 248, 255, 1);
 }
 
+.para {
+    font-family: 'Inter', serif, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: clamp(14px, 3vw, 22px);
+}
+
+.heading {
+    font-family: 'Noto Serif', serif, sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: clamp(24px, 4vw, 50px);
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
 .gray{
     color: rgba(137, 135, 161, 1);
 }
@@ -87,18 +104,77 @@ body {
     align-items: flex-end;
     margin-top: clamp(24px, 8vw, 120px);
 }
-
 .header-heading {
     font-family: 'Noto Serif', sans-serif;
     font-size: clamp(24px, 6vw, 65px);
     font-weight: 700;
 }
 
-.hero-description {
+/* .hero-description {
     font-family: 'Inter', sans-serif;
     font-size: clamp(14px, 2vw, 22px);
     color: rgba(0, 0, 0, 0.5);
     margin-top: 1rem;
+} */
+
+/* Styling for the Plants Section */
+
+.plants-section{
+    margin-top: clamp(65px, 6vw, 120px);
 }
+
+.plants-content {
+    text-align: center;
+}
+
+/* styles for the Card Section */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 30px 20px;
+    margin-top: clamp(28px, 3vw, 50px);
+}
+.card {
+    width: 100%;
+    background-color: rgb(231, 230, 230);
+}
+
+.card img{
+    width: 100%;
+}
+
+.card-info{
+     margin: 30px 0;
+}
+
+.card-info h4, p {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(16px, 4vw, 22px);
+    text-align: center;
+    color: rgba(17, 17, 17, 1);
+}
+
+.card-info h4 {
+    font-weight: 500;
+}
+
+.card-info p {
+    font-weight: 700;
+}
+
+.add-btn {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px clamp(10px, 2vw, 30px);
+    background-color: rgba(233, 90, 8, 1);
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
 
 

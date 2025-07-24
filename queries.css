@@ -1,9 +1,27 @@
 @media screen and (max-width: 992px) {
     
-    .hero-content{
-        padding: 0 2rem;
+}
+@media screen and (max-width: 768px) {
+    .hero-section{
+        flex-direction: column-reverse;
     }
 
+    .hero-image img {
+        width: 100%;
+    }
+
+    .hero-content{
+        padding: 0 3rem;
+    }
+
+    .plants-content {
+        padding: 0 2.5rem;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 1rem;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -15,13 +33,10 @@
         display: none;
     }
 
-    .hero-section{
-        flex-direction: column-reverse;
+    .hero-content{
+        padding: 0 2rem;
     }
 
-    .hero-image img {
-        width: 100%;
-    }
     
 }
 
