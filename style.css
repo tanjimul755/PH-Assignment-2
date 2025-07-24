@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', 'Inter', serif, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    /* border: 1px solid black; */
+}
+
+body {
+    background-color: rgba(245, 248, 255, 1);
+}
+
+.gray{
+    color: rgba(137, 135, 161, 1);
+}
+.light{
+    color: rgba(0, 0, 0, 0.5);
+}
+.black{
+    color: black;
+}
+.orange {
+    color: rgba(233, 90, 8, 1);
+}
+.black-2{
+    color: #111111;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* Styling for the navbar section */
+
+.header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-menu {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 2rem;
+    
+}
+
+.nav-menu li a {
+    font-family: 'Inter', serif, sans-serif;
+    color: rgba(137, 135, 161, 1);
+    font-weight: 400;
+}
+
+.nav-menu li a:hover {
+    color: black;
+    font-weight: 700;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: black;
+}
+
+.cart:hover {
+    background-color: rgba(137, 135, 161, 0.086);
+    padding: 1rem;
+}
+
+/* Styling for the Hero Section */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: clamp(24px, 8vw, 120px);
+}
+
+.header-heading {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: clamp(24px, 6vw, 65px);
+    font-weight: 700;
+}
+
+.hero-description {
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2vw, 22px);
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 1rem;
+}
+
+
