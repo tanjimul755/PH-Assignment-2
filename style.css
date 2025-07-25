@@ -110,12 +110,9 @@ body {
     font-weight: 700;
 }
 
-/* .hero-description {
-    font-family: 'Inter', sans-serif;
-    font-size: clamp(14px, 2vw, 22px);
-    color: rgba(0, 0, 0, 0.5);
-    margin-top: 1rem;
-} */
+.hero-description {
+    text-align: left;
+}
 
 /* Styling for the Plants Section */
 
@@ -138,7 +135,11 @@ body {
 }
 .card {
     width: 100%;
-    background-color: rgb(231, 230, 230);
+    transition: scale 250ms ease-in-out;
+}
+
+.card:hover {
+    scale: 102%;
 }
 
 .card img{
@@ -176,5 +177,85 @@ body {
     display: inline-block;
 }
 
+/* Plants Lover Section */
 
+.plants-lover-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: clamp(40px, 4vw, 200px);                
+}
 
+.plants-lover-info {
+    padding: 38px 0 18px 4rem;
+}
+
+.bullet-points li {
+    list-style: initial;
+    margin: 20px 0;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.bullet-points {
+    margin-left: 2rem;
+}
+
+.plants-lover-section-img {
+    position: relative;
+}
+
+.badge {
+    height: 286px;
+    width: 286px;
+    position: absolute;
+    right: -100px;
+    top: -114px;
+    animation: spin 10s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Stylimg for the Latest Deals Section */
+
+.latest-deal-section {
+    padding: 6rem 0;
+}
+
+.gallery {
+     display: grid;
+     grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 4rem 2rem;
+}
+
+.gallery div:nth-child(1) {
+     grid-column: 1;
+    grid-row: 1;
+}
+
+.gallery div:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.gallery div:nth-child(3) {
+     grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+}

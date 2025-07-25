@@ -178,7 +178,62 @@
 
             </div>
 
+        </section>
 
+        <!-- Plants Lover Section -->
+
+        <section class="plants-lover-section container">
+
+            <div class="plants-lover-section-img">
+                <img src="./assets/flower-store.png" alt="Flower store exterior">
+                <img class="badge" src="./assets/trusted-badge.png" alt="trusted badge logo">
+            </div>
+
+            <div class="plants-lover-info">
+
+                <h3 class="heading">Flower & Plants Lover</h3>
+
+                <ul class="bullet-points">
+                    <li class="para">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+                        classic roses
+                        to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li class="para">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+                        classic roses
+                        to exotic blooms, we offer a wide variety of fresh.</li>
+                    <li class="para">Indulge your senses with the beauty and fragrance of our fresh flower shop. From
+                        classic roses
+                        to exotic blooms, we offer a wide variety of fresh.</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <!-- Latest Deal Section -->
+
+        <section class="latest-deal-section container">
+
+            <div class="plants-content">
+
+                <h2 class="plants-heading heading orange">Latest <span class="black">Deals</span></h2>
+                <p class="plants-description mt-16 para">Indulge your senses with the beauty and fragrance of our fresh
+                    flower
+                    shop. From classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+
+            </div>
+
+            <div class="gallery">
+                <div>
+                    <img src="./assets/deal-bloom.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/deal-ana.png" alt="">
+                </div>
+                <div>
+                    <img src="./assets/deal-zabo.png" alt="">
+                </div>
+
+            </div>
         </section>
 
     </main>
@@ -186,6 +241,18 @@
     <!-- <footer>
         <p>&copy; 2024 PH Assignment. All rights reserved.</p>
     </footer> -->
+
+
+    <script>
+        const links = document.querySelectorAll(".add-btn");
+
+        links.forEach((link) => {
+            link.addEventListener("click", function (e) {
+                e.preventDefault(); // stops the # from jumping
+                alert("Flower Added to Cart");
+            });
+        });
+    </script>
 
 </body>
 
