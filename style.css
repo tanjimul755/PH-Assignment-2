@@ -366,7 +366,7 @@ body {
 /* Styling for the footer Section */
 
 footer {
-    display: none;
+    display: flex;
     justify-content: space-between;
     padding: 50px 160px;
 }
@@ -384,6 +384,7 @@ footer {
 .footer-content p {
     text-align: left;
     font-size: clamp(16px, 1vw, 22px);
+    margin-top: 1rem;
 }
 
 .footer-menu {
