@@ -362,3 +362,42 @@ body {
     text-decoration: none; 
     width: 186px;
 }
+
+/* Styling for the footer Section */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 160px;
+}
+
+.footer-menu ul li a {
+    font-family: 'Inter', serif, sans-serif;
+    color: rgba(137, 135, 161, 1);
+    font-weight: 400;
+}
+
+.footer-content {
+    width: 360px;
+}
+
+.footer-content p {
+    text-align: left;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 110px;
+}
+
+.footer-menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.socials-icons {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
